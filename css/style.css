@@ -28,12 +28,22 @@ a{
 }
 /* banner style */
 .banner{
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--primary-bg);
     padding: 60px 0 ;
     margin-bottom: 30px;
+}
+
+.banner:hover span{
+    font-size: 4rem;
+    color: tomato;
+
+}
+.banner:hover img{
+    transform:scale(.8);
 }
 .banner-title h1{
     text-transform: uppercase;
@@ -42,7 +52,7 @@ a{
     line-height: 1.2em;
 }
 .banner-title span{
-    color: tomato;
+    transition: 0.5s;
 }
 .banner-title .banner-title-button{
     margin: 20px 0;
@@ -51,24 +61,60 @@ a{
     line-height: 40px;
     height: 40px;
     width: 120px;
+    transition: 0.3s;
     
+}
+.banner-title-button:hover {
+    background-color:tomato;
+}
+
+.button-inner p{
+    margin: 0;
 }
 .banner-title .button-inner{
     align-items: center;
     justify-content: space-around;
 }
 .button-inner i{
-    margin-top: 5px;
+    margin-top: 3px;
 }
 .banner .banner-img{
     width: 500px;
     height: 400px;
 }
 .banner .banner-img img{
+    transition: 0.5s ease-out;
+    transition-delay: 0.2s;
     width: 100%;
 }
+.effect{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid red;
+    bottom: 40px;
+    left: 22%;
+    animation: rotate 6s linear infinite;
+    transition: 0.4s;
+}
 
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+        
+    }
+    50%{
+        border-color: blue;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-color: red;
+    }
+}
+.banner:hover .effect{
 
+    left: 60%;
+}
 /* player lists */
 .player-list{
     display: flex;
@@ -92,12 +138,13 @@ a{
     margin: 10px 0;
 }
 .player p{
+    margin: 0;
     line-height: 23px;
     padding-bottom: 20px;
     color: grey;
 }
 .player img{
-    
+    width: 100%;
 }
 /* news section */
 .news{
@@ -182,6 +229,14 @@ a{
     color:white;
     font-weight: 600;
 }
+.footer-img{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer-img img{
+    width: 30%;
+}
 
 
 /* media query */
@@ -233,5 +288,8 @@ a{
     width: 100%;
     border-radius: 15px;
 }
-
+.effect{
+    width: 30px;
+    height: 30px;
+}
 }
