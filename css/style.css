@@ -51,11 +51,14 @@ a{
     line-height: 40px;
     height: 40px;
     width: 120px;
-    padding: 0 10px;
+    
 }
 .banner-title .button-inner{
     align-items: center;
     justify-content: space-around;
+}
+.button-inner i{
+    margin-top: 5px;
 }
 .banner .banner-img{
     width: 500px;
@@ -64,9 +67,7 @@ a{
 .banner .banner-img img{
     width: 100%;
 }
- .player p{
-    color: grey;
-}
+
 
 /* player lists */
 .player-list{
@@ -93,11 +94,64 @@ a{
 .player p{
     line-height: 23px;
     padding-bottom: 20px;
+    color: grey;
 }
 .player img{
     
 }
-
+/* news section */
+.news{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.news .single-news{
+    padding: 10px;
+    box-shadow: var(--primary-shadow);
+    margin: 10px;
+    border-radius: 15px;
+}
+.news h4,h3,p{
+    margin-left: 10px;
+}
+.news h3{
+    color: var(--primary-bg);
+}
+.news h4{
+    color: var(--btn-bg);
+}
+.news p{
+    
+    margin-top: 5px;
+    color: grey;
+}
+.news img{
+    margin: 15px 0;
+    border-radius: 15px;
+}
+/* brand area */
+.brands{
+    margin-top: 60px;
+}
+.brands h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--btn-bg);
+    margin: 40px 0;
+    text-transform: uppercase;
+}
+.brand{
+    margin: 40px ;
+    display: flex;
+    justify-content: center;
+     flex-wrap: wrap;
+}
+.brand img{
+    width: 250px;
+    margin: 10px 10px;
+}
 /* footer */
 
 .footer{
@@ -105,6 +159,7 @@ a{
     padding: 60px 0  40px;
    display: flex;
    justify-content: center;
+   background-color: var(--primary-bg);
 }
 .footer .social-icons{
     text-align: center;
@@ -124,7 +179,7 @@ a{
 }
 .footer p{
     text-align: center;
-    color: grey;
+    color:white;
     font-weight: 600;
 }
 
