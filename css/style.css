@@ -84,7 +84,7 @@ a{
 }
 .banner .banner-img img{
     transition: 0.5s ease-out;
-    transition-delay: 0.2s;
+    transition-delay: 0.3s;
     width: 100%;
 }
 .effect{
@@ -132,10 +132,17 @@ a{
     width: 330px;
      margin: 15px 5px;
     box-shadow: var(--primary-shadow);
+    cursor: pointer;
+   
 
+}
+.player:hover h3{
+    color: var(--btn-bg);
+    font-size: 20px;
 }
 .player h3{
     margin: 10px 0;
+     transition: 0.2s;
 }
 .player p{
     margin: 0;
@@ -158,6 +165,7 @@ a{
     box-shadow: var(--primary-shadow);
     margin: 10px;
     border-radius: 15px;
+    cursor: pointer;
 }
 .news h4,h3,p{
     margin-left: 10px;
@@ -194,6 +202,7 @@ a{
     display: flex;
     justify-content: center;
      flex-wrap: wrap;
+     cursor: pointer;
 }
 .brand img{
     width: 250px;
