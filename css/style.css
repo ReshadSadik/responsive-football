@@ -131,6 +131,19 @@ a{
 /* media query */
 @media screen and  (max-width: 992px){
 
+    .player-list .players{
+        grid-template-columns: repeat(2,1fr);
+    }
 
     
+}
+@media screen and  (max-width: 600px){
+
+    .player-list .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .players{
+        overflow: hidden;
+    }
 }
