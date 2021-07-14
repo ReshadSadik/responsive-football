@@ -38,7 +38,7 @@ a{
 }
 
 .banner:hover span{
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: tomato;
 
 }
@@ -79,6 +79,10 @@ a{
     margin-top: 3px;
 }
 .banner .banner-img{
+    background-image:url(/images/Group.png);
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 500px;
     height: 400px;
 }
@@ -115,6 +119,8 @@ a{
 
     left: 60%;
 }
+
+
 /* player lists */
 .player-list{
     display: flex;
@@ -153,6 +159,8 @@ a{
 .player img{
     width: 100%;
 }
+
+
 /* news section */
 .news{
     display: flex;
@@ -185,6 +193,9 @@ a{
     margin: 15px 0;
     border-radius: 15px;
 }
+
+
+
 /* brand area */
 .brands{
     margin-top: 60px;
@@ -208,6 +219,9 @@ a{
     width: 250px;
     margin: 10px 10px;
 }
+
+
+
 /* footer */
 
 .footer{
@@ -281,9 +295,6 @@ a{
         display: block;
         padding: 60px 20px;
     }
-    /* .banner-title h1{
-        font-size: 2rem;
-    } */
 .banner .banner-img{
     margin: 30px auto;
     width: 300px;
